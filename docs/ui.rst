@@ -1,6 +1,8 @@
 Menus and Pies
-==============
+=======================================
 
-iOps Transform Menu
 
+.. toctree::
+    ui_menus     
+    ui_pies
 

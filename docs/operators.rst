@@ -1,7 +1,8 @@
 Operators(Functions)
-===========
+=======================================
 iOps Operators
 
 .. toctree::
-    funcional_buttons     
-    visual_origin
+    op_funcional_buttons     
+    op_visual_origin
+    op_quick_snap
