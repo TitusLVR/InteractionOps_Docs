@@ -1,6 +1,0 @@
-QuickSnap
-=============================
-
-Operator description here
-    
-
