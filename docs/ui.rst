@@ -3,6 +3,6 @@ Menus and Pies
 
 
 .. toctree::
-    ui_menus     
-    ui_pies
+    ui/ui_menus     
+    ui/ui_pies
 
