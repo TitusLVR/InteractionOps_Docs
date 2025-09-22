@@ -14,12 +14,12 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import sphinx_rtd_theme
+# import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
 project = 'InteractionOps'
-copyright = '2020, Titus and Cyrill'
+copyright = '2025, Titus and Cyrill'
 author = 'Titus and Cyrill'
 
 # The full version, including alpha/beta/rc tags
@@ -32,7 +32,8 @@ release = '0.0.1'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme",
+    "myst_parser",
+    # "sphinx_rtd_theme",
     # "sphinxcontrib.video"
     ]
 
@@ -60,3 +61,9 @@ html_static_path = ['_static']
 
 
 master_doc = 'index'
+
+# MyST parser configuration
+source_suffix = {
+    '.rst': None,
+    '.md': None,
+}
