@@ -3,26 +3,30 @@ iOps Operators
 
 ## Operators List
 
-- [Functional Buttons](operators/op_funcional_buttons.md)
-- [Select Bounded Loop Ring](operators/op_select_bounded_loop_ring.md)
-- [Mirror](operators/op_mirror.md)
-- [Put On](operators/op_put_on.md)
-- [Connect](operators/op_connect.md)
-- [Line Up](operators/op_line_up.md)
-- [Equalize](operators/op_equalize.md)
-- [Delete Selection](operators/op_delete_selection.md)
-- [Grow Loop Ring](operators/op_grow_loop_ring.md)
-- [Shrink Loop Ring](operators/op_shrink_loop_ring.md)
-- [Mouse Fill Select](operators/op_mouse_fill_select.md)
-- [Grid from Active](operators/op_grid_from_active.md)
-- [Complex Modal Rotation](operators/op_complex_modal_rotation.md)
-- [Mesh to Grid](operators/op_mesh_to_grid.md)
-- [Object Normalize](operators/op_object_normalize.md)
-- [Object Rotate XYZ](operators/op_object_rotate_XYZ.md)
-- [Align Origin to Face Normal](operators/op_align_origin_to_face_normal.md)
-- [Drag Snap](operators/op_drag_snap.md)
-- [Quick Snap](operators/op_quick_snap.md)
-- [Visual Origin](operators/op_visual_origin.md)
-- [Run Text](operators/op_run_text.md)
-- [Script Executor](operators/op_script_executor.md)
-- [Cyclic Switcher](operators/op_cyclic_switcher.md)
+```{toctree}
+:maxdepth: 1
+
+operators/op_funcional_buttons
+operators/op_select_bounded_loop_ring
+operators/op_mirror
+operators/op_put_on
+operators/op_connect
+operators/op_line_up
+operators/op_equalize
+operators/op_delete_selection
+operators/op_grow_loop_ring
+operators/op_shrink_loop_ring
+operators/op_mouse_fill_select
+operators/op_grid_from_active
+operators/op_complex_modal_rotation
+operators/op_mesh_to_grid
+operators/op_object_normalize
+operators/op_object_rotate_XYZ
+operators/op_align_origin_to_face_normal
+operators/op_drag_snap
+operators/op_quick_snap
+operators/op_visual_origin
+operators/op_run_text
+operators/op_script_executor
+operators/op_cyclic_switcher
+```

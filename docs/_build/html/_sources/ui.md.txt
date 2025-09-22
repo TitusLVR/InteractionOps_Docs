@@ -1,4 +1,8 @@
 # Menus and Pies
 
-- [Menus](ui/ui_menus.md)
-- [Pies](ui/ui_pies.md)
+```{toctree}
+:maxdepth: 1
+
+ui/ui_menus
+ui/ui_pies
+```

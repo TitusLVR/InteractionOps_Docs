@@ -63,7 +63,4 @@ html_static_path = ['_static']
 master_doc = 'index'
 
 # MyST parser configuration
-source_suffix = {
-    '.rst': None,
-    '.md': None,
-}
+source_suffix = ['.rst', '.md']

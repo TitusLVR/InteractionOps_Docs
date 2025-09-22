@@ -6,7 +6,11 @@ It is a set of operators which boost Blender interactivity between user and appl
 
 ## Table of Contents:
 
-- [Installation](installation.md)
-- [UI](ui.md)
-- [Operators](operators.md)
-- [Preferences](preferences.md)
+```{toctree}
+:maxdepth: 2
+
+installation
+ui
+operators
+preferences
+```
