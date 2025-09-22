@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Cyclic Switching Axis/PivotPoint/Snap" href="operators/op_cyclic_switcher.html" /> 
+    <link rel="prev" title="Z-Ops" href="operators/op_z_ops.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -45,7 +45,28 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ui.html">Menus and Pies</a></li>
 <li class="toctree-l1"><a class="reference internal" href="operators.html">Operators(Functions)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Preferences</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Preferences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-preferences">Accessing Preferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preference-categories">Preference Categories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-settings">General Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ui-text-display">UI Text &amp; Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hotkeys-keymaps">Hotkeys &amp; Keymaps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#snap-combinations">Snap Combinations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#split-area-pies">Split Area Pies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#script-executor">Script Executor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#object-operations">Object Operations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-configuration">Advanced Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#custom-scripts-integration">Custom Scripts Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workflow-presets">Workflow Presets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-best-practices">Tips &amp; Best Practices</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -74,15 +95,178 @@
              
   <section id="preferences">
 <h1>Preferences<a class="headerlink" href="#preferences" title="Link to this heading"></a></h1>
-<p>iOps preferences files are stored here:</p>
-<p><code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;USER</span> <span class="pre">NAME&gt;\AppData\Roaming\Blender</span> <span class="pre">Foundation\Blender\2.xx\scripts\presets\IOPS</span></code></p>
+<p>InteractionOps provides extensive customization options through Blender’s addon preferences panel and external preset files.</p>
+<section id="accessing-preferences">
+<h2>Accessing Preferences<a class="headerlink" href="#accessing-preferences" title="Link to this heading"></a></h2>
+<p><strong>In Blender:</strong></p>
+<ol class="arabic simple">
+<li><p>Go to <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">&gt;</span> <span class="pre">Preferences</span> <span class="pre">&gt;</span> <span class="pre">Add-ons</span></code></p></li>
+<li><p>Search for “InteractionOps”</p></li>
+<li><p>Expand the addon preferences panel</p></li>
+</ol>
+<p><strong>Preset Files Location:</strong>
+<code class="docutils literal notranslate"><span class="pre">C:\Users\&lt;USER</span> <span class="pre">NAME&gt;\AppData\Roaming\Blender</span> <span class="pre">Foundation\Blender\2.xx\scripts\presets\IOPS</span></code></p>
+</section>
+<section id="preference-categories">
+<h2>Preference Categories<a class="headerlink" href="#preference-categories" title="Link to this heading"></a></h2>
+<section id="general-settings">
+<h3>General Settings<a class="headerlink" href="#general-settings" title="Link to this heading"></a></h3>
+<p><strong>Panel Category</strong></p>
+<ul class="simple">
+<li><p><strong>Tab Name</strong>: Customize the name of the iOps panel tab in the 3D viewport</p></li>
+<li><p><strong>Default</strong>: “iOps”</p></li>
+</ul>
+<p><strong>Debug Mode</strong></p>
+<ul class="simple">
+<li><p><strong>Query Debug</strong>: Enable debugging output for troubleshooting</p></li>
+<li><p><strong>Default</strong>: Off</p></li>
+</ul>
+</section>
+<section id="ui-text-display">
+<h3>UI Text &amp; Display<a class="headerlink" href="#ui-text-display" title="Link to this heading"></a></h3>
+<p><strong>Modal Operator Text</strong></p>
+<ul class="simple">
+<li><p><strong>Text Color</strong>: Color for main modal operator text</p></li>
+<li><p><strong>Key Color</strong>: Color for keyboard shortcut hints</p></li>
+<li><p><strong>Text Size</strong>: Size of modal text display (1-100)</p></li>
+<li><p><strong>Position X/Y</strong>: Screen position for modal text</p></li>
+</ul>
+<p><strong>Text Shadow</strong></p>
+<ul class="simple">
+<li><p><strong>Shadow Toggle</strong>: Enable/disable text shadows</p></li>
+<li><p><strong>Shadow Color</strong>: Shadow color and opacity</p></li>
+<li><p><strong>Shadow Blur</strong>: None, Mid (3), or High (5)</p></li>
+<li><p><strong>Shadow Position</strong>: X/Y offset for shadow</p></li>
+</ul>
+<p><strong>Statistics Display</strong></p>
+<ul class="simple">
+<li><p><strong>Statistics</strong>: Show UV maps and non-uniform scale info</p></li>
+<li><p><strong>Stat Colors</strong>: Colors for normal, key, and error statistics</p></li>
+<li><p><strong>Stat Position</strong>: Screen position for statistics display</p></li>
+</ul>
+</section>
+<section id="hotkeys-keymaps">
+<h3>Hotkeys &amp; Keymaps<a class="headerlink" href="#hotkeys-keymaps" title="Link to this heading"></a></h3>
+<p><strong>Functional Keys (F1-F5)</strong></p>
+<ul class="simple">
+<li><p>Context-sensitive operations mapped to function keys</p></li>
+<li><p>Modifier key combinations (Ctrl, Alt, Shift)</p></li>
+<li><p>ESC key for canceling operations</p></li>
+</ul>
+<p><strong>Default Hotkeys:</strong></p>
+<ul class="simple">
+<li><p><strong>F1-F5</strong>: Main functional buttons</p></li>
+<li><p><strong>Alt+F1-F3</strong>: Mesh selection mode switching</p></li>
+<li><p><strong>Alt+F5</strong>: Align origin to normal</p></li>
+<li><p><strong>↑</strong>: Mesh to grid / Object normalize</p></li>
+<li><p><strong>Ctrl+Alt+Shift+S</strong>: Drag snap operations</p></li>
+</ul>
+</section>
+<section id="snap-combinations">
+<h3>Snap Combinations<a class="headerlink" href="#snap-combinations" title="Link to this heading"></a></h3>
+<p><strong>8 Configurable Snap Presets</strong></p>
+<ul class="simple">
+<li><p><strong>Snap Elements</strong>: Vertex, Edge, Face, Volume, etc.</p></li>
+<li><p><strong>Snap Target</strong>: Active, Closest, Center, Median</p></li>
+<li><p><strong>Tool Settings</strong>: Self-snapping, rotation alignment, etc.</p></li>
+<li><p><strong>Transformation</strong>: Global, Local, Normal orientations</p></li>
+</ul>
+</section>
+<section id="split-area-pies">
+<h3>Split Area Pies<a class="headerlink" href="#split-area-pies" title="Link to this heading"></a></h3>
+<p><strong>9 Customizable Area Splits</strong></p>
+<ul class="simple">
+<li><p><strong>Split Factor</strong>: Ratio for area division (0.0-1.0)</p></li>
+<li><p><strong>Position</strong>: Top, Bottom, Left, Right</p></li>
+<li><p><strong>Area Type</strong>: Choose target editor type</p></li>
+<li><p><strong>Presets</strong>: Save and recall viewport layouts</p></li>
+</ul>
+</section>
+<section id="script-executor">
+<h3>Script Executor<a class="headerlink" href="#script-executor" title="Link to this heading"></a></h3>
+<p><strong>Executor Settings</strong></p>
+<ul class="simple">
+<li><p><strong>Scripts Folder</strong>: Path to custom scripts directory</p></li>
+<li><p><strong>Column Count</strong>: Number of columns in executor UI</p></li>
+<li><p><strong>Name Length</strong>: Maximum displayed name length</p></li>
+<li><p><strong>Use Script Path</strong>: Use Blender’s default script directory</p></li>
+<li><p><strong>Subfolder</strong>: Custom subfolder name (“iops_exec”)</p></li>
+</ul>
+</section>
+<section id="object-operations">
+<h3>Object Operations<a class="headerlink" href="#object-operations" title="Link to this heading"></a></h3>
+<p><strong>Align to Edge</strong></p>
+<ul class="simple">
+<li><p><strong>Edge Color</strong>: Highlight color for alignment guides</p></li>
+<li><p><strong>Visual Feedback</strong>: Real-time alignment indicators</p></li>
+</ul>
+<p><strong>Rotation Settings</strong></p>
+<ul class="simple">
+<li><p><strong>Rotation Angle</strong>: Default rotation increment (degrees)</p></li>
+<li><p><strong>Multi-axis Support</strong>: X, Y, Z axis rotations</p></li>
+</ul>
+</section>
+<section id="import-export">
+<h3>Import/Export<a class="headerlink" href="#import-export" title="Link to this heading"></a></h3>
+<p><strong>Preset Management</strong></p>
+<ul class="simple">
+<li><p>Save current preferences as presets</p></li>
+<li><p>Load preset configurations</p></li>
+<li><p>Share presets between installations</p></li>
+<li><p>Reset to default settings</p></li>
+</ul>
+</section>
+</section>
+<section id="advanced-configuration">
+<h2>Advanced Configuration<a class="headerlink" href="#advanced-configuration" title="Link to this heading"></a></h2>
+<section id="custom-scripts-integration">
+<h3>Custom Scripts Integration<a class="headerlink" href="#custom-scripts-integration" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Place Python scripts in the executor folder</p></li>
+<li><p>Scripts appear in the executor interface</p></li>
+<li><p>Batch operation support</p></li>
+<li><p>Error handling and reporting</p></li>
+</ul>
+</section>
+<section id="workflow-presets">
+<h3>Workflow Presets<a class="headerlink" href="#workflow-presets" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Create custom operator combinations</p></li>
+<li><p>Save frequently used settings</p></li>
+<li><p>Quick workspace switching</p></li>
+<li><p>Context-sensitive configurations</p></li>
+</ul>
+</section>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading"></a></h2>
+<p><strong>Common Issues:</strong></p>
+<ul class="simple">
+<li><p><strong>Hotkeys not working</strong>: Check for conflicts in Blender keymap</p></li>
+<li><p><strong>Text not visible</strong>: Adjust text position and color settings</p></li>
+<li><p><strong>Scripts not loading</strong>: Verify executor folder path</p></li>
+<li><p><strong>Preferences not saving</strong>: Check Blender user preferences directory</p></li>
+</ul>
+<p><strong>Debug Mode:</strong>
+Enable “Query Debug” to see detailed operation information in the console.</p>
+</section>
+<section id="tips-best-practices">
+<h2>Tips &amp; Best Practices<a class="headerlink" href="#tips-best-practices" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Backup Preferences</strong>: Export settings before major changes</p></li>
+<li><p><strong>Custom Hotkeys</strong>: Avoid conflicts with Blender defaults</p></li>
+<li><p><strong>Screen Position</strong>: Adjust text positions for different monitor sizes</p></li>
+<li><p><strong>Color Schemes</strong>: Match text colors to your Blender theme</p></li>
+<li><p><strong>Script Organization</strong>: Use subfolders for better script management</p></li>
+</ul>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="operators/op_cyclic_switcher.html" class="btn btn-neutral float-left" title="Cyclic Switching Axis/PivotPoint/Snap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="operators/op_z_ops.html" class="btn btn-neutral float-left" title="Z-Ops" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
