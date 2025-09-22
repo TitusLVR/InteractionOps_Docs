@@ -7,7 +7,8 @@ It is a set of operators which boost Blender interactivity between user and appl
 ## Table of Contents:
 
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 3
+:titlesonly:
 
 installation
 ui

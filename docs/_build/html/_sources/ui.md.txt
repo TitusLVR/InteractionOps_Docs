@@ -1,7 +1,8 @@
 # Menus and Pies
 
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
+:titlesonly:
 
 ui/ui_menus
 ui/ui_pies
